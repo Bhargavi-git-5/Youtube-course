@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Aggregated Skill Course</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="course-overview">
+            <h1 class="course-title">Web Development Masterclass</h1>
+            <p class="course-level">Skill Level: Beginner</p>
+            <p class="course-duration">Duration: 15 hours</p>
+            <p class="total-videos">Total Videos: 25</p>
+            <p class="average-rating">Average Rating: 4.5/5</p>
+            <button class="enroll-btn">Enroll</button>
+        </div>
+
+       
+        <div class="video-list">
+            <h2 style="background-color: #4caf50;">Video List</h2>
+            <ul class="video-items">
+              
+                <li class="video-item">
+                    <span class="video-title">Intro to Web Development</span>
+                    <span class="video-duration">15 min</span>
+                    <span class="video-views">1.2K views</span>
+                    <input type="checkbox" class="completed-checkbox"> Mark as Completed
+                </li>
+                
+            </ul>
+        </div>
+
+        <div class="video-player">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/exampleVideoID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="ai-summary">AI-generated Summary: This video covers the basics of web development...</p>
+        </div>
+
+       
+        <div class="notes-tools">
+            <h3>Notes for Video</h3>
+            <textarea id="custom-notes" placeholder="Add your notes here..."></textarea>
+            <button id="save-notes">Save Notes</button>
+
+            <h4>AI-Generated Questions</h4>
+            <ul class="ai-questions">
+                <li>What is the importance of HTML in web development?</li>
+                <li>Explain the difference between frontend and backend development.</li>
+            </ul>
+        </div>
+
+        <div class="progress-tracker">
+            <h3>Course Progress</h3>
+            <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 40%"></div>
+            </div>
+            <p>40% Completed</p>
+        </div>
+        <div class="job-seeker-tips">
+            <h3>Job-Seeker Tips</h3>
+            <ul>
+                <li>Learn full-stack development to enhance your job prospects.</li>
+                <li>Join a developer community to collaborate and learn more.</li>
+            </ul>
+        </div>
+
+        <div class="rate-course">
+            <h3>Rate this Course</h3>
+            <input type="number" id="course-rating" max="5" min="1" placeholder="Rate from 1 to 5">
+            <button id="submit-rating">Submit Rating</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
